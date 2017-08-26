@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainback" >
+
+    <TextView 
+        android:id="@+id/id_main_txt_test"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="点我求救！"/>
+     <com.lockscreen.android.activity.MyRelativeLayout
+         android:id="@+id/id_main_mrlt_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp" >
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+            android:background="@drawable/linearlayout_bg" >
+            
+            <ImageView 
+            android:id="@+id/id_main_img_right"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="243dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_lock"/>
+            
+        </LinearLayout>
+        <ImageView 
+            android:id="@+id/id_main_img_left"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/slidebtn_move"/>
+    </com.lockscreen.android.activity.MyRelativeLayout>
+
+</LinearLayout>
